@@ -1,0 +1,64 @@
+/* Styles for Web View */
+.container {
+    opacity: 90%;
+    background-color: rgb(35, 6, 149);
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.formSection {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formSection label {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.formSection input,
+.formSection select,
+.formSection textarea {
+    width: 48%;
+    /* Two inputs in one row with a small gap */
+    margin-right: 2%;
+    /* Gap between inputs */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+/* Rest of your styles remain unchanged */
+
+/* Styles for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        /* Adjusted max-width for smaller screens */
+    }
+
+    .formSection label {
+        width: 100%;
+        /* Full width for labels on smaller screens */
+    }
+
+    .formSection input,
+    .formSection select,
+    .formSection textarea {
+        width: 100%;
+        /* One input per row on smaller screens */
+        margin-right: 0;
+        /* No gap between inputs */
+        margin-bottom: 10px;
+        /* Reduce bottom margin for spacing */
+    }
+}

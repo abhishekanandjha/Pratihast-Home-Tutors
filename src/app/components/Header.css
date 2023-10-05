@@ -1,0 +1,58 @@
+header {
+    background-color:white; /* #3498db; */
+    color: black;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.brand {
+    font-size: 37px;
+    margin-bottom: 10px;
+    color: #000;
+    font-Weight: 'bold';
+    /* Set text color to black */
+    text-decoration: none;
+    /* Remove underline from the link */
+    letter-spacing: 2px;
+    /* Increase spacing between words */
+    font-family: 'Arial', sans-serif;
+    /* Use a professional font (Arial) */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        text-align: center;
+    }
+
+    .brand {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
